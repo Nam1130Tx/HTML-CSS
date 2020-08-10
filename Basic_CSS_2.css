@@ -1,0 +1,9 @@
+p {
+  color: olive;
+  background-color: beige;
+  font-style: italic;
+  font-size: large;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 2px 2px 8px #5F9EA0;
+}

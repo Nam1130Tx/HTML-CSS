@@ -1,0 +1,15 @@
+table {
+	border: 2px solid olivedrab;
+}
+td:hover {
+	background-color: cadetblue;
+	color: darkred;
+}
+tr, th {
+	background-color: lightgray;
+	color: indigo;
+}
+tr, td {
+	background-color: steelblue;
+	color: yellowgreen;
+}
