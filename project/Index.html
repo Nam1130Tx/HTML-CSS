@@ -1,187 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title> The Race Track | Resort</title>
 		<meta charset="utf-8">
+		<title> The Race Track | Resort</title>
+		<link rel="stylesheet" href="./css/shared.css">
+		<link rel="stylesheet" href="./css/animations.css">
 	</head>
 	<body>
-	
-	<!--Nav -->
-	<div>
-		<div>
-			<ul>
-				<a href="#home" id="link"><li>Home</li></a>
-				<a href="#gallery" id="link"><li>Gallery</li></a>
-				<a href="#contact" id="link"><li>Reservations</li></a>
-			</ul>
-		</div>
-	</div>
-	<!-- End Nav -->
-	
-	<!--Home -->
-	<div id="home">
-		<div>
-			<div>
-				<span>The Race Track</span>
+		
+		<!-- NAV -->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>RESERVATIONS</li></a>
+				</ul>
 			</div>
 		</div>
-	</div>
-	<!-- End Home-->
-	
-	<!--Gallery -->
-	<section>
-		<div id="gallery">
-			<h1>Gallery</h1>
-			<div>
-			
-				<!-- Photo-Container 1-->
-				<div>
-					<div>
-						<img src="./images/thumb/thumbnail_1.png" alt="Image of classic rally car">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several challenging races daily, book your spot today!</p>
-						</div>
-					</div>
+		<!-- END NAV-->
+
+		<!-- HOME-->
+		<div id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-name">The Race Track</span>
 				</div>
-				<!-- End Photo-Container 1-->
-				
-				<!-- Photo-Container 2-->
-				<div>
-					<div>
-						<img src="./images/thumb/thumbnail_2.png" alt="Image of classic Porche 911">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several challenging races daily, book your spot today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Photo-Container 2-->
-				
-				<!-- Photo-Container 3-->
-				<div>
-					<div>
-						<img src="./images/thumb/thumbnail_3p.png" alt="Image of classic race car">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several challenging races daily, book your spot today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Photo-Container 3-->
-				
-				<!-- Photo-Container 4-->
-				<div>
-					<div>
-						<img src="./images/thumb/thumbnail_4p.png" alt="Image of Audi rally car">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several challenging races daily, book your spot today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Photo-Container 4-->
-				
-				<!-- Photo-Container 5-->
-				<div>
-					<div>
-						<img src="./images/thumb/thumbnail_5p.png" alt="Image of classic Corvette">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several challenging races daily, book your spot today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Photo-Container 5-->
-				
-				<!-- Photo-Container 6-->
-				<div>
-					<div>
-						<img src="./images/thumb/thumbnail_6.png" alt="Image of classic Camero">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several challenging races daily, book your spot today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Photo-Container 6-->
-				
-				<!-- Photo-Container 7-->
-				<div>
-					<div>
-						<img src="./images/thumb/thumbnail_7.png" alt="Image of classic Mustang">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several challenging races daily, book your spot today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Photo-Container 7-->
-				
-				<!-- Photo-Container 8-->
-				<div>
-					<div>
-						<img src="./images/thumb/thumbnail_8.png" alt="Image of classic Charger">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several challenging races daily, book your spot today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Photo-Container 8-->
-				
-				<!-- Photo-Container 9-->
-				<div>
-					<div>
-						<img src="./images/thumb/thumbnail_9.png" alt="Image of cars racing">
-						<div>
-							<h3>Click to Enlarge</h3>
-							<p>We have several challenging races daily, book your spot today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Photo-Container 9-->
 			</div>
 		</div>
-	</section>
-	 <!-- End Gallery -->
-	 
-	 <!--RSVP -->
-	 <section>
-		<div id="contact">
-			<div>
-				<h1>Reservations</h1>
-				<div>
-					<h2><span>Bring out the racer in you.</span>
-						<br />Reserve your track today!
-					</h2>
-					<p>
-						Please provide us with your basic contact information.
-					</P>
-					<div>
-						<form action="" method="post">
-							<input class="rsvp" type="text" value="First Name">
-							<input class="rsvp" type="text" value="Last Name">
-							<input class="rsvp" type="text" value="Email Address">
-							<input class="rsvp" type="text" value="Phone Number">
-							<div class="form-spacer">
-								<label class="terms">Terms and Conditions</label>
+		<!-- END HOME -->
+
+		<!-- GALLERY -->
+		<section id="gallery"> 
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+
+					<!-- PHOTO CONTAINER 1 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumb/thumbnail_1.png" alt="img1">
+							<div class="photo-overlay">
+								<h3>Click to enlarge</h3>
+								<p>We have races starting daily</p>
 							</div>
-							<div>
-								<input type="submit" value="Submit">
-							</div>
-						</form>
+						</div>
 					</div>
+					<!-- END PHOTO CONTAINER 1-->
+
+					<!-- PHOTO CONTAINER 2 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumb/thumbnail_2.png" alt="img2">
+							<div class="photo-overlay">
+								<h3>Click to enlarge</h3>
+								<p>We have races starting daily</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 2-->
+
+					<!-- PHOTO CONTAINER 3 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumb/thumbnail_3.png" alt="img3">
+							<div class="photo-overlay">
+								<h3>Click to enlarge</h3>
+								<p>We have races starting daily</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 3-->
+
+					<!-- PHOTO CONTAINER 4 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumb/thumbnail_4.png" alt="img4">
+							<div class="photo-overlay">
+								<h3>Click to enlarge</h3>
+								<p>We have races starting daily</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 4-->
+
+					<!-- PHOTO CONTAINER 5 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumb/thumbnail_5.png" alt="img5">
+							<div class="photo-overlay">
+								<h3>Click to enlarge</h3>
+								<p>We have races starting daily</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 5-->
+
+					<!-- PHOTO CONTAINER 6 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumb/thumbnail_6.png" alt="img6">
+							<div class="photo-overlay">
+								<h3>Click to enlarge</h3>
+								<p>We have races starting daily</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 6-->
+
+					<!-- PHOTO CONTAINER 7 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumb/thumbnail_7.png" alt="img7">
+							<div class="photo-overlay">
+								<h3>Click to enlarge</h3>
+								<p>We have races starting daily</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 7-->
+
+					<!-- PHOTO CONTAINER 8 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumb/thumbnail_8.png" alt="img8">
+							<div class="photo-overlay">
+								<h3>Click to enlarge</h3>
+								<p>We have races starting daily</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 8-->
+
+					<!-- PHOTO CONTAINER 9 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumb/thumbnail_9.png" alt="img9">
+							<div class="photo-overlay">
+								<h3>Click to enlarge</h3>
+								<p>We have races starting daily</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 9-->
+
 				</div>
 			</div>
+		</section>
+		<!-- END GALLERY-->
+
+		<!-- RSVP -->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding"></h1>
+					<div class="reservation">
+						<h2><span>Your adventure is coming around the track!</span>
+							<br/>Book your laps today.
+						</h2>
+						<p class="rsvp-text">
+							Please let us know how to contact you, to set up your race day!
+						</p>
+						<div class="form-rsvp">
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="E-mail Address">
+								<input class="rsvp" type="text" value="" placeholder="Phone number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- END RSVP-->
+
+		<!-- FOOTER-->
+		<div id="footer">
+			www.theracetrack.race &nbsp;|&nbsp; &copy; 2020
 		</div>
-	</section>
-	<!-- End RSVP -->
+		<!-- END FOOTER-->
 	
-	<!-- Footer -->
-	<div>
-		www.theracetrack.space &nbsp;|&nbsp; &copy; 2020
-	</div>
-	<!-- End Footer -->
 	</body>
 </html>
