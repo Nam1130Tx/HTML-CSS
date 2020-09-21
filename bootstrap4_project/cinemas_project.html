@@ -14,7 +14,7 @@
 
     <div class="container">
 
-
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,8 +34,10 @@
                 <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
               </form>
             </div>
-          </nav>
+        </nav>
+        <!-- /navbar -->
 
+          <!-- About -->
           <div class="jumbotron jumbotron-fluid bg-info text-center ">
             <div class="container">
               <h1 class="display-4 text-light">Academy Cinemas</h1>
@@ -79,6 +81,19 @@
               </div>
             </div>
           </div>
+          <!-- /About -->
+
+          <!-- Media -->
+          <div class="media" style="background-color: lightgray; border: 1px solid cadetblue;">
+            <img src="./img/reel.png" class="mr-3" alt="Movie Reel" style="width: 50px; height: 50px;">
+            <div class="media-body">
+              <h5 class="mt-0">Our favorite film sites.</h5>
+              <a href="https://www.cinemablend.com/">Cinema Blend <br></a>
+              <a href="https://screenrant.com/">Screen Rant<br></a>
+              <a href="https://movieweb.com/">Movie Web</a>
+            </div>
+          </div>
+          <!-- /Media -->
 
           <!-- Showtimes -->
           <div class="container my-5">
@@ -136,16 +151,76 @@
           </div>
           <!-- /Showtimes -->
 
+          <!-- Jumbotron-->
+          <br>
+          <div class="jumbotron jumbotron-fluid bg-info xt-5 text-center">
+            <div class="container">
+              <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">Movie Deals</h1>
+              <p class="lead">Check out our monthly movie deals...</p>
+              <!-- Movie Deal Button-->
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly specials.</button>
+              <!-- /Movie Deal Button-->
+            </div>
+          </div>
+          <!-- /Jumbotron-->
+
+          <!-- Sign up -->
           <div class="text-center" id="deals">
                 <form>
                     <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receieve great email deals! .">
+                      Sign Up
+                    </button>
+                    
                 </form>
           </div>
+          <!-- /Sign up-->
 
+          <!-- Form Modal-->
+          <div class="modal" id="register" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to receive movie deals.</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                <form>
+                  <fieldset class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Email...">
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="text" class="form-control" id="password" placeholder="Password...">
+                  </fieldset>
+                </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Form Modal-->
+
+          <!-- Footer -->
           <div class="container my-5">
                 <ul class="nav nav-inline">
                     <li class="nav-item">
@@ -162,7 +237,7 @@
                     </li>
                 </ul>
           </div>
-
+          <!-- /Footer -->
 
 
 
@@ -175,5 +250,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    </script>
   </body>
 </html>
